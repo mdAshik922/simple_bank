@@ -6,7 +6,7 @@ function getInputValue(inputId) {
     addAmount.value = '';
     
     return newDepositAmount;
-}
+};
 
 function updateBalance(depositDollar, amount) {
     const showAddAmount = document.getElementById(depositDollar);
