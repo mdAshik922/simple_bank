@@ -47,10 +47,10 @@ document.getElementById('dollarAdd').addEventListener('click', function () {
 document.getElementById('dollarWithdraw').addEventListener('click', function(){
     const WithdrawDollarInputField = getInputValue('interWithdrawAmount');
 
-    // const totalWithdrawDollar = document.getElementById('totalWithdrawDollar');
-    // const previousWithdrawDollar = parseFloat(totalWithdrawDollar.innerText);
-    // const newWithdrawDollar = WithdrawDollarInputField + previousWithdrawDollar;
-    // totalWithdrawDollar.innerText = newWithdrawDollar;
+    const totalWithdrawDollar = document.getElementById('totalWithdrawDollar');
+    const previousWithdrawDollar = parseFloat(totalWithdrawDollar.innerText);
+    const newWithdrawDollar = WithdrawDollarInputField + previousWithdrawDollar;
+    totalWithdrawDollar.innerText = newWithdrawDollar;
     updateBalance('totalWithdrawDollar', WithdrawDollarInputField);
 
     const balanceTotal = document.getElementById('balanceDollar');
