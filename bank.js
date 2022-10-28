@@ -16,7 +16,7 @@ function updateBalance(depositDollar, amount) {
     showAddAmount.innerText = totalDeposit;
     
 
-}
+};
 
 
 function updateTotalBalance() {
