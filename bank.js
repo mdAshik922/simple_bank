@@ -21,10 +21,7 @@ function updateTotalBalance() {
     const balanceTotal = document.getElementById('balanceDollar');
     const balanceText = balanceTotal.innerText;
     const previousBalance = parseFloat(balanceText);
-    if () {
-        
-    }
-    else {
+   
       
 };
 
