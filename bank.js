@@ -35,7 +35,6 @@ document.getElementById('dollarAdd').addEventListener('click', function () {
     const addAmount = getInputValue('inputId');
     updateBalance('depositDollar', addAmount);
     
-    
     //update balance
     const balanceDollarAmount = document.getElementById('balanceDollar');
     const blanceAmount = parseFloat(balanceDollarAmount.innerText);
