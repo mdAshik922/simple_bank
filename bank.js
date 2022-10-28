@@ -58,8 +58,6 @@ document.getElementById('dollarWithdraw').addEventListener('click', function(){
     const previousBalance = parseFloat(balanceText);
     const newBalanceTOtal = previousBalance - WithdrawDollarInputField;
     balanceTotal.innerText = newBalanceTOtal;
-
-    
 });
 
 
