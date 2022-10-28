@@ -22,7 +22,10 @@ function updateTotalBalance() {
     const balanceText = balanceTotal.innerText;
     const previousBalance = parseFloat(balanceText);
    
-      
+    if () {
+        
+    }
+    else {
 };
 
 document.getElementById('dollarAdd').addEventListener('click', function () {
