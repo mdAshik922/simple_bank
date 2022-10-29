@@ -22,14 +22,12 @@ function updateTotalBalance(addAmount, isAdd) {
     const balanceText = balanceDollarAmount.innerText;
     const blanceAmount = parseFloat(balanceText);
     
-    
-
     if (isAdd == true) {
         balanceDollarAmount.innerText = addAmount + blanceAmount ;
     }
     else {
-        balanceDollarAmount.innerText = previousBalance - addAmount; 
-   }
+        balanceDollarAmount.innerText =  blanceAmount - addAmount  ;
+    };
    
 };
 
