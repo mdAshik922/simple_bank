@@ -17,19 +17,20 @@ function updateBalance(depositDollar, amount) {
 };
 
 
-function updateTotalBalance(addAmount) {
+function updateTotalBalance(addAmount, isAdd) {
     const balanceDollarAmount = document.getElementById('balanceDollar');
-    const blanceAmount = parseFloat(balanceDollarAmount.innerText);
+    const balanceText = balanceDollarAmount.innerText;
+    const blanceAmount = parseFloat(balanceText);
     
-    balanceDollarAmount.innerText = totalBlacneAmount;
+    
 
-    if () {
-        const totalBlacneAmount = addAmount + blanceAmount ;
+    if (isAdd == true) {
+        balanceDollarAmount.innerText = addAmount + blanceAmount ;
     }
     else {
-        const newBalanceTOtal = previousBalance - WithdrawDollarInputField; 
+        balanceDollarAmount.innerText = previousBalance - addAmount; 
    }
-    
+   
 };
 
 document.getElementById('dollarAdd').addEventListener('click', function () {
@@ -38,7 +39,7 @@ document.getElementById('dollarAdd').addEventListener('click', function () {
     updateBalance('depositDollar', addAmount);
     
 
-    updateTotalBalance(addAmount);
+    updateTotalBalance(addAmount, true);
     //update balance
     // const balanceDollarAmount = document.getElementById('balanceDollar');
     // const blanceAmount = parseFloat(balanceDollarAmount.innerText);
@@ -61,5 +62,5 @@ document.getElementById('dollarAdd').addEventListener('click', function () {
         // const previousBalance = parseFloat(balanceText);
         // const newBalanceTOtal = previousBalance - WithdrawDollarInputField;
         // balanceTotal.innerText = newBalanceTOtal;
-        updateTotalBalance(WithdrawDollarInputField);
+        updateTotalBalance(WithdrawDollarInputField, false);
     });
