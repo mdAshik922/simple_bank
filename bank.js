@@ -50,9 +50,10 @@ document.getElementById('dollarAdd').addEventListener('click', function () {
         // totalWithdrawDollar.innerText = newWithdrawDollar;
         updateBalance('totalWithdrawDollar', WithdrawDollarInputField);
 
-        const balanceTotal = document.getElementById('balanceDollar');
-        const balanceText = balanceTotal.innerText;
-        const previousBalance = parseFloat(balanceText);
-        const newBalanceTOtal = previousBalance - WithdrawDollarInputField;
-        balanceTotal.innerText = newBalanceTOtal;
+        // const balanceTotal = document.getElementById('balanceDollar');
+        // const balanceText = balanceTotal.innerText;
+        // const previousBalance = parseFloat(balanceText);
+        // const newBalanceTOtal = previousBalance - WithdrawDollarInputField;
+        // balanceTotal.innerText = newBalanceTOtal;
+        updateTotalBalance()
     });
