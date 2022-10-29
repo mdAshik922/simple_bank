@@ -22,6 +22,10 @@ function updateTotalBalance(addAmount) {
     const blanceAmount = parseFloat(balanceDollarAmount.innerText);
     const totalBlacneAmount = addAmount + blanceAmount ;
     balanceDollarAmount.innerText = totalBlacneAmount;
+
+    if ({
+        
+    })
    
     
 };
@@ -55,5 +59,5 @@ document.getElementById('dollarAdd').addEventListener('click', function () {
         // const previousBalance = parseFloat(balanceText);
         // const newBalanceTOtal = previousBalance - WithdrawDollarInputField;
         // balanceTotal.innerText = newBalanceTOtal;
-        updateTotalBalance()
+        updateTotalBalance();
     });
