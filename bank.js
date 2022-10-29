@@ -17,16 +17,13 @@ function updateBalance(depositDollar, amount) {
 };
 
 
-function updateTotalBalance() {
+function updateTotalBalance(addAmount) {
     const balanceDollarAmount = document.getElementById('balanceDollar');
     const blanceAmount = parseFloat(balanceDollarAmount.innerText);
     const totalBlacneAmount = addAmount + blanceAmount ;
     balanceDollarAmount.innerText = totalBlacneAmount;
    
-    if () {
-        
-    }
-    else {
+    
 };
 
 document.getElementById('dollarAdd').addEventListener('click', function () {
@@ -35,7 +32,7 @@ document.getElementById('dollarAdd').addEventListener('click', function () {
     updateBalance('depositDollar', addAmount);
     
 
-    updateTotalBalance();
+    updateTotalBalance(addAmount);
     //update balance
     // const balanceDollarAmount = document.getElementById('balanceDollar');
     // const blanceAmount = parseFloat(balanceDollarAmount.innerText);
@@ -44,20 +41,18 @@ document.getElementById('dollarAdd').addEventListener('click', function () {
 });
 
 
-document.getElementById('dollarWithdraw').addEventListener('click', function(){
-    const WithdrawDollarInputField = getInputValue('interWithdrawAmount');
+    document.getElementById('dollarWithdraw').addEventListener('click', function () {
+        const WithdrawDollarInputField = getInputValue('interWithdrawAmount');
 
-    // const totalWithdrawDollar = document.getElementById('totalWithdrawDollar');
-    // const previousWithdrawDollar = parseFloat(totalWithdrawDollar.innerText);
-    // const newWithdrawDollar = WithdrawDollarInputField + previousWithdrawDollar;
-    // totalWithdrawDollar.innerText = newWithdrawDollar;
-    updateBalance('totalWithdrawDollar', WithdrawDollarInputField);
+        // const totalWithdrawDollar = document.getElementById('totalWithdrawDollar');
+        // const previousWithdrawDollar = parseFloat(totalWithdrawDollar.innerText);
+        // const newWithdrawDollar = WithdrawDollarInputField + previousWithdrawDollar;
+        // totalWithdrawDollar.innerText = newWithdrawDollar;
+        updateBalance('totalWithdrawDollar', WithdrawDollarInputField);
 
-    const balanceTotal = document.getElementById('balanceDollar');
-    const balanceText = balanceTotal.innerText;
-    const previousBalance = parseFloat(balanceText);
-    const newBalanceTOtal = previousBalance - WithdrawDollarInputField;
-    balanceTotal.innerText = newBalanceTOtal;
-});
-
-
+        const balanceTotal = document.getElementById('balanceDollar');
+        const balanceText = balanceTotal.innerText;
+        const previousBalance = parseFloat(balanceText);
+        const newBalanceTOtal = previousBalance - WithdrawDollarInputField;
+        balanceTotal.innerText = newBalanceTOtal;
+    });
