@@ -32,33 +32,17 @@ function updateTotalBalance(addAmount, isAdd) {
 };
 
 document.getElementById('dollarAdd').addEventListener('click', function () {
-    
     const addAmount = getInputValue('inputId');
     updateBalance('depositDollar', addAmount);
-    
 
     updateTotalBalance(addAmount, true);
-    //update balance
-    // const balanceDollarAmount = document.getElementById('balanceDollar');
-    // const blanceAmount = parseFloat(balanceDollarAmount.innerText);
-    // const totalBlacneAmount = addAmount + blanceAmount ;
-    // balanceDollarAmount.innerText = totalBlacneAmount;
 });
 
 
     document.getElementById('dollarWithdraw').addEventListener('click', function () {
         const WithdrawDollarInputField = getInputValue('interWithdrawAmount');
-
-        // const totalWithdrawDollar = document.getElementById('totalWithdrawDollar');
-        // const previousWithdrawDollar = parseFloat(totalWithdrawDollar.innerText);
-        // const newWithdrawDollar = WithdrawDollarInputField + previousWithdrawDollar;
-        // totalWithdrawDollar.innerText = newWithdrawDollar;
+        
         updateBalance('totalWithdrawDollar', WithdrawDollarInputField);
 
-        // const balanceTotal = document.getElementById('balanceDollar');
-        // const balanceText = balanceTotal.innerText;
-        // const previousBalance = parseFloat(balanceText);
-        // const newBalanceTOtal = previousBalance - WithdrawDollarInputField;
-        // balanceTotal.innerText = newBalanceTOtal;
         updateTotalBalance(WithdrawDollarInputField, false);
     });
