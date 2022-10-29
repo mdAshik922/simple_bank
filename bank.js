@@ -23,10 +23,10 @@ function updateTotalBalance(addAmount, isAdd) {
     const blanceAmount = parseFloat(balanceText);
     
     if (isAdd == true) {
-        balanceDollarAmount.innerText = addAmount + blanceAmount ;
+        balanceDollarAmount.innerText = addAmount + blanceAmount;
     }
     else {
-        balanceDollarAmount.innerText =  blanceAmount - addAmount  ;
+        balanceDollarAmount.innerText =  blanceAmount - addAmount;
     };
    
 };
