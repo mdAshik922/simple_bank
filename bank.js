@@ -12,8 +12,7 @@ function updateBalance(depositDollar, amount) {
     const showAddAmount = document.getElementById(depositDollar);
     const previousDeposit = parseFloat(showAddAmount.innerText);
 
-    const totalDeposit =  previousDeposit + amount;
-    showAddAmount.innerText = totalDeposit;
+   
 };
 
 
