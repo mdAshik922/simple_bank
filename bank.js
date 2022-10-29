@@ -23,9 +23,9 @@ function updateTotalBalance(addAmount) {
     const totalBlacneAmount = addAmount + blanceAmount ;
     balanceDollarAmount.innerText = totalBlacneAmount;
 
-    if ({
+    if () {
         
-    })
+    }
    
     
 };
