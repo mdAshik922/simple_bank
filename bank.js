@@ -18,9 +18,10 @@ function updateBalance(depositDollar, amount) {
 
 
 function updateTotalBalance() {
-    const balanceTotal = document.getElementById('balanceDollar');
-    const balanceText = balanceTotal.innerText;
-    const previousBalance = parseFloat(balanceText);
+    const balanceDollarAmount = document.getElementById('balanceDollar');
+    const blanceAmount = parseFloat(balanceDollarAmount.innerText);
+    const totalBlacneAmount = addAmount + blanceAmount ;
+    balanceDollarAmount.innerText = totalBlacneAmount;
    
     if () {
         
@@ -36,7 +37,7 @@ document.getElementById('dollarAdd').addEventListener('click', function () {
     //update balance
     const balanceDollarAmount = document.getElementById('balanceDollar');
     const blanceAmount = parseFloat(balanceDollarAmount.innerText);
-    const totalBlacneAmount = lal + blanceAmount ;
+    const totalBlacneAmount = addAmount + blanceAmount ;
     balanceDollarAmount.innerText = totalBlacneAmount;
 });
 
