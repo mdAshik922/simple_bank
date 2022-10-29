@@ -34,11 +34,13 @@ document.getElementById('dollarAdd').addEventListener('click', function () {
     const addAmount = getInputValue('inputId');
     updateBalance('depositDollar', addAmount);
     
+
+    updateTotalBalance();
     //update balance
-    const balanceDollarAmount = document.getElementById('balanceDollar');
-    const blanceAmount = parseFloat(balanceDollarAmount.innerText);
-    const totalBlacneAmount = addAmount + blanceAmount ;
-    balanceDollarAmount.innerText = totalBlacneAmount;
+    // const balanceDollarAmount = document.getElementById('balanceDollar');
+    // const blanceAmount = parseFloat(balanceDollarAmount.innerText);
+    // const totalBlacneAmount = addAmount + blanceAmount ;
+    // balanceDollarAmount.innerText = totalBlacneAmount;
 });
 
 
