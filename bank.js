@@ -44,5 +44,5 @@ document.getElementById('dollarAdd').addEventListener('click', function () {
         if (WithdrawDollarInputField > 0) {
             updateBalance('totalWithdrawDollar', WithdrawDollarInputField);
         updateTotalBalance(WithdrawDollarInputField, false);
-        }
+        };
     });
