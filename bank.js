@@ -36,7 +36,7 @@ document.getElementById('dollarAdd').addEventListener('click', function () {
     updateBalance('depositDollar', addAmount);
 
     updateTotalBalance(addAmount, true);
-});
+})
 
 
     document.getElementById('dollarWithdraw').addEventListener('click', function () {
