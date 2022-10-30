@@ -26,8 +26,7 @@ function updateTotalBalance(addAmount, isAdd) {
     }
     else {
         balanceDollarAmount.innerText =  blanceAmount - addAmount;
-    };
-   
+    };  
 };
 
 document.getElementById('dollarAdd').addEventListener('click', function () {
