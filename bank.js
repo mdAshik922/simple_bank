@@ -16,7 +16,6 @@ function updateBalance(depositDollar, amount) {
     showAddAmount.innerText = totalDeposit;
 };
 
-
 function updateTotalBalance(addAmount, isAdd) {
     const balanceDollarAmount = document.getElementById('balanceDollar');
     const balanceText = balanceDollarAmount.innerText;
