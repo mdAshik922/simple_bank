@@ -33,9 +33,9 @@ function updateTotalBalance(addAmount, isAdd) {
 
 document.getElementById('dollarAdd').addEventListener('click', function () {
     const addAmount = getInputValue('inputId');
-    updateBalance('depositDollar', addAmount);
-
-    updateTotalBalance(addAmount, true);
+    if () {
+       
+   }
 });
 
 
@@ -43,6 +43,5 @@ document.getElementById('dollarAdd').addEventListener('click', function () {
         const WithdrawDollarInputField = getInputValue('interWithdrawAmount');
         
         updateBalance('totalWithdrawDollar', WithdrawDollarInputField);
-
         updateTotalBalance(WithdrawDollarInputField, false);
     });
