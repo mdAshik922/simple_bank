@@ -35,7 +35,7 @@ document.getElementById('dollarAdd').addEventListener('click', function () {
     if (addAmount > 0) {
         updateBalance('depositDollar', addAmount);
     updateTotalBalance(addAmount, true);
-   }
+    };
 });
 
     document.getElementById('dollarWithdraw').addEventListener('click', function () {
