@@ -33,7 +33,7 @@ function updateTotalBalance(addAmount, isAdd) {
 
 document.getElementById('dollarAdd').addEventListener('click', function () {
     const addAmount = getInputValue('inputId');
-    if () {
+    if (addAmount) {
         updateBalance('depositDollar', addAmount);
     updateTotalBalance(addAmount, true);
    }
