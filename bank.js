@@ -44,7 +44,7 @@ document.getElementById('dollarAdd').addEventListener('click', function () {
     document.getElementById('dollarWithdraw').addEventListener('click', function () {
         const WithdrawDollarInputField = getInputValue('interWithdrawAmount');
         
-        if (WithdrawDollarInputField > 0) {
+        if (WithdrawDollarInputField !=isNaN) {
             updateBalance('totalWithdrawDollar', WithdrawDollarInputField);
         updateTotalBalance(WithdrawDollarInputField, false);
         }
