@@ -44,5 +44,7 @@ document.getElementById('dollarAdd').addEventListener('click', function () {
     document.getElementById('dollarWithdraw').addEventListener('click', function () {
         const WithdrawDollarInputField = getInputValue('interWithdrawAmount');
         
-        
+        if () {
+            
+        }
     });
