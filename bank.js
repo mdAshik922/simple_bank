@@ -8,6 +8,7 @@ for (const same of sames) {
 
 document.getElementById('total_Balance').style.backgroundColor = 'rgb(183, 109, 251)';
 document.getElementById('total_Balance').style.width = '150px';
+
 const p_ElementCreate = document.createElement('p');
 const p_ElementCreate_Next = document.createElement('p');
 const span_Create = document.createElement('span');
