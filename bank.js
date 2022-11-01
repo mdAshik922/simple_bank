@@ -1,7 +1,4 @@
 
-
-  
-    // and give it some content
     const sames = document.getElementsByClassName('smae');
 
 for (const same of sames) {
@@ -23,7 +20,6 @@ p_ElementCreate.style.fontSize = 'large';
 p_ElementCreate_Next.innerHTML = '$';
 p_ElementCreate_Next.style.textAlign = 'center';
 p_ElementCreate_Next.style.fontSize = 'large';
-
 
 span_Create.innerHTML = '00';
 span_Create.style.textAlign = 'center';
