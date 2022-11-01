@@ -29,9 +29,6 @@ document.getElementById('total_Balance').appendChild(p_ElementCreate);
 document.getElementById('total_Balance').appendChild(p_ElementCreate_Next);
 p_ElementCreate_Next.appendChild(span_Create);
 
-
-
-
 function getInputValue(inputId) {
     const addAmount = document.getElementById(inputId);
     const depositAmountText = addAmount.value;
