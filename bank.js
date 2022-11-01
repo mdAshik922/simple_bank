@@ -6,7 +6,7 @@ for (const same of sames) {
     same.style.width = '150px';
     }
 
-document.getElementById('total_Balance').style.backgroundColor = '#865DAB';
+document.getElementById('total_Balance').style.backgroundColor = 'rgb(183, 109, 251)';
 document.getElementById('total_Balance').style.width = '150px';
 const p_ElementCreate = document.createElement('p');
 const p_ElementCreate_Next = document.createElement('p');
