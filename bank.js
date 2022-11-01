@@ -1,4 +1,18 @@
 
+
+  
+    // and give it some content
+    const sames = document.getElementsByClassName('smae');
+  
+for (const same of sames) {
+    same.style.backgroundColor = "rgb(133, 158, 211)";
+    same.style.width = '150px';
+    }
+
+
+
+
+
 function getInputValue(inputId) {
     const addAmount = document.getElementById(inputId);
     const depositAmountText = addAmount.value;
