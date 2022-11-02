@@ -1,4 +1,4 @@
-
+//      DOME Style oKay
 document.body.style.cssText = ("margin: 0px; padding: 0px; box-sizing: border-box; background-color: aqua;");
 document.getElementById('three-div').style.cssText = ("display: flex; flex-direction: row; row-gap: 5px; margin-top: 10%; margin-left: 20%;");
 
