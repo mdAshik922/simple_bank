@@ -1,6 +1,8 @@
 
-    const sames = document.getElementsByClassName('smae');
+document.body.style.cssText = ("margin: 0px; padding: 0px; box-sizing: border-box; background-color: aqua;");
+document.getElementById('three-div').style.cssText = ("display: flex; flex-direction: row; row-gap: 5px; margin-top: 10%; margin-left: 20%;");
 
+    const sames = document.getElementsByClassName('smae');
 for (const same of sames) {
     same.style.backgroundColor = "rgb(133, 158, 211)";
     same.style.width = '150px';
@@ -15,16 +17,13 @@ const span_Create = document.createElement('span');
 span_Create.id = 'balanceDollar';
 
 p_ElementCreate.innerHTML = 'Balance';
-p_ElementCreate.style.textAlign = 'center';
-p_ElementCreate.style.fontSize = 'large';
+p_ElementCreate.style.cssText = "text-align: center; font-size: large";
 
 p_ElementCreate_Next.innerHTML = '$';
-p_ElementCreate_Next.style.textAlign = 'center';
-p_ElementCreate_Next.style.fontSize = 'large';
+p_ElementCreate_Next.style.cssText = "text-align: center; font-size: large";
 
 span_Create.innerHTML = '00';
-span_Create.style.textAlign = 'center';
-span_Create.style.fontSize = 'large';
+span_Create.style.cssText = "text-align: center; font-size: large";
 
 document.getElementById('total_Balance').appendChild(p_ElementCreate);
 document.getElementById('total_Balance').appendChild(p_ElementCreate_Next);
