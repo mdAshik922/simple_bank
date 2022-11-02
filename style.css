@@ -3,9 +3,9 @@
     padding: 0px;
     box-sizing: border-box;
     background-color: aqua;
-} */
+}
 
-/* .three-div{
+.three-div{
     display: flex;
    flex-direction: row;
    row-gap: 5px;
