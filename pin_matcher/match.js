@@ -1,3 +1,15 @@
+function getPin() {
+    const pin = Math.random() * 500;;
+    const strinngPin = pin+' ';
+    if(stringPin.length == 4){
+        return pin;
+    }
+    else{
+        return getPin();
+    }
+}
+
 function generatePin() {
     
+    console.log(pin);
 }
