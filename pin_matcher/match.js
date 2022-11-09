@@ -7,9 +7,9 @@ function getPin() {
     else{
         return getPin();
     }
-}
+};
 
 function generatePin() {
-    
-    console.log(pin);
-}
+    const pin = getPin();
+   document.getElementById('generatePin_show').value;
+};
