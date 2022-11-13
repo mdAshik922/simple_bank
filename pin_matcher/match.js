@@ -1,8 +1,9 @@
 function getPin() {
-    const pin = Math.random() * 500;;
-    const stringPin = pin + ' ';
+    const pin = Math.round(Math.random()*1000);
+    const stringPin = pin + '';
     
-    if(stringPin.length == 4){
+    if (stringPin.length == 3) {
+        // console.log(pin)
         return pin;
     }
     else{
@@ -11,6 +12,14 @@ function getPin() {
 };
 
 function generatePin() {
-    const pin = getPin();
-    document.getElementById('pinNumber').value = pin;
-}
+    const pins = getPin();
+    document.getElementById('pinNumber').value = pins;
+};
+
+document.getElementById('keyPressShow_number').addEventListener('click', function (event) {
+    const click_number = event.target.innerText;
+    const calc = document.getElementById('key_pad');
+    const priviousClac = calc.value;
+    const newCalc = priviousClac + click_number;
+    calc.value = newCalc;
+});
