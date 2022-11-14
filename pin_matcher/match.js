@@ -3,7 +3,7 @@ function getPin() {
     const stringPin = pin + '';
     
     if (stringPin.length == 3) {
-        // console.log(pin)
+        // console.log(pin);
         return pin;
     }
     else{
