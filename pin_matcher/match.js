@@ -1,7 +1,9 @@
 function getPin() {
-    const pin = Math.random() * 500;;
-    const strinngPin = pin+' ';
-    if(stringPin.length == 4){
+    const pin = Math.round(Math.random()*1000);
+    const stringPin = pin + '';
+    
+    if (stringPin.length == 3) {
+        // console.log(pin)
         return pin;
     }
     else{
@@ -21,3 +23,4 @@ document.getElementById('keyPressShow_number').addEventListener('click', functio
     const newCalc = priviousClac + click_number;
     calc.value = newCalc;
 });
+
