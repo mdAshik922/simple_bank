@@ -10,5 +10,14 @@ function getPin() {
 };
 
 function generatePin() {
-    const pin = getPin();
-}
+    const pins = getPin();
+    document.getElementById('pinNumber').value = pins;
+};
+
+document.getElementById('keyPressShow_number').addEventListener('click', function (event) {
+    const click_number = event.target.innerText;
+    const calc = document.getElementById('key_pad');
+    const priviousClac = calc.value;
+    const newCalc = priviousClac + click_number;
+    calc.value = newCalc;
+});
