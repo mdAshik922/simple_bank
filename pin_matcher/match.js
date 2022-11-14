@@ -23,3 +23,4 @@ document.getElementById('keyPressShow_number').addEventListener('click', functio
     const newCalc = priviousClac + click_number;
     calc.value = newCalc;
 });
+
