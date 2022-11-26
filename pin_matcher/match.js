@@ -1,3 +1,15 @@
+
+// document.getElementById('generate_pin').addEventListener('click', function () {
+//     const pin = document.getElementById('inputField_pinShow')
+//     pin.value = Math.round(Math.random()*10000)
+// });
+
+// function getShowPin() {
+//     const pin = document.getElementById('inputField_pinShow')
+//     pin.value = Math.round(Math.random()*10000)
+// }
+
+
 function getPin() {
     const pin = Math.round(Math.random()*1000);
     const stringPin = pin + '';
